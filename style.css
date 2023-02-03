@@ -1,0 +1,76 @@
+/*
+Theme Name: blankslate Child
+Theme URI:  https://www.wpserveur.net
+Author:     WPServeur
+Author URI: https://www.wpserveur.net
+Template:   blankslate
+Version:    1.0
+License:    GNU General Public License v2 or later
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+
+* {
+    font-family: 'Syne', sans-serif;
+}
+
+body{
+    margin: 0
+}
+
+/* HEADER */         
+.PageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.PageHeader__logo img {
+    padding: 30px 60px 30px 60px;
+}
+
+
+/* NAVIGATION BAR */
+.PageHeader__nav{
+    display: flex;
+ }
+ 
+ .PageHeader__nav-contact, .PageHeader__nav-admin {
+     border-top: 3px solid transparent;
+     padding: 30px 60px 30px 0;
+     color: black;
+ }
+ 
+ .PageHeader__nav-contact:hover, .PageHeader__nav-admin:hover {
+     font-weight: 700; 
+ }
+ 
+ /* COMMANDE */
+ 
+ .PageHeader__nav-command {
+     color: white;
+     padding: 30px 60px 30px 60px;
+     background-color: #DC9F96;
+ }
+ 
+ .PageHeader__nav-command:hover {
+     background-color: #C02E44;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+
+
+
+/* FOOTER */
+.PageFooter__copyright{
+    color: black;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
