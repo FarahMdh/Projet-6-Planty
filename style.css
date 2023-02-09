@@ -24,6 +24,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-items: stretch;
 }
 
 .PageHeader__logo img {
@@ -40,6 +41,7 @@ body{
      border-top: 3px solid transparent;
      padding: 30px 60px 30px 0;
      color: black;
+     
  }
  
  .PageHeader__nav-contact:hover, .PageHeader__nav-admin:hover {
@@ -126,50 +128,66 @@ body{
     display: none;
 }
 
-        /*PAGE COMMANDER */
-/* BUTTON CONTACT FORM */
+              /*PAGE COMMANDER */
 
 
-#wpforms-submit-268{
-    display: none;
-}
+/* CONTACT FORM */
 
-#wpforms-submit-272{
-    display: none;
-}
-
-/* CONTACT FORM INFORMATIONS*/
-
-#wpforms-form-268{
+.Formulaire{
     display: flex;
-    justify-content: center;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 
+.Blocs{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+}
 
-
-
-#wpforms-268-field_2, #wpforms-268-field_16, #wpforms-268-field_15{
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required{
     padding-left: 15px; 
-    height: 70px;  
+    height: 70px;
+    width: 383px;  
     border-radius: 7px;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
     border: none; 
+    margin-top: 10px;
 }
 
-.wpforms-field-label{
+.Livraison{
+    border-left: 1px solid white;
+    padding-left: 50px;
+    margin-left: 50px;
+}
+
+.Livraison h2{
+    color: white;
+    font-weight: 700!important; 
+    font-size: 30px!important;
+}
+
+.Livraison p label{
     color: white;
     font-weight: 400!important; 
     font-size: 20px!important;
 }
 
-/* CONTACT FORM LIVRAISON*/
-#wpforms-272-field_2, #wpforms-272-field_16, #wpforms-272-field_17{
-    padding-left: 15px; 
-    height: 70px;  
-    border-radius: 7px;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
-    border: none; 
+.Informations h2{
+    color: white;
+    font-weight: 700!important; 
+    font-size: 30px!important;
 }
+
+.Informations p label{
+    color: white;
+    font-weight: 400!important; 
+    font-size: 20px!important;
+}
+
 
 
 /* CONTACT FORM SEND BOUTON*/
@@ -270,3 +288,7 @@ body{
     color: white;
     border-radius: 7px;
 }
+
+.Counter__button button:hover{
+    background-color: #C02E44;
+    }
