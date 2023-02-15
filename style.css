@@ -52,6 +52,63 @@ body{
 .PageHeader__nav ul.menu li:hover {
      font-weight: 700; 
 }
+
+
+/* HEADER RESPONSIVE TABLETTE */
+
+@media all and (max-width: 1024px) {
+    .PageHeader__logo img {
+        aspect-ratio: auto 109 / 10;
+    }
+}
+
+.PageHeader__logo img {
+    max-width: 108%;
+    max-height: 60%;
+    object-fit: contain;
+    min-width: 20%;
+    min-height: 30%;
+}
+
+/* HEADER RESPONSIVE SMARTPHONE */
+
+@media all and (max-width: 768px) {
+    .PageHeader__nav {
+        display: flex;
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .PageHeader__nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .PageHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .PageHeader__logo img {
+        max-width: 108%;
+        max-height: 60%;
+        object-fit: contain;
+        min-width: 20%;
+        min-height: 30%;
+    }
+    
+    .PageHeader__nav ul.menu li {
+        padding: 15px 15px 15px 0px;
+    }
+
+    .PageHeader__nav-command {
+        padding: 15px 30px 14px 30px!important;
+    }
+}
  
  /* ONGLET COMMANDE */
  
