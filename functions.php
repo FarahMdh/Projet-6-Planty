@@ -9,14 +9,20 @@ if ( ! function_exists( 'b7ectg_theme_enqueue_styles' ) ) {
         wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . 'style.css', array( 'parent-style' ) );
     }
 }
+
+/* Ajout de la possibilité d'ajoute un logo dans Apparence */
 function blankslate_child_setup() {
     add_theme_support('custom-logo');
-    }
+}
     
-    add_action( 'after_setup_theme', 'blankslate_child_setup' );
-    register_nav_menus( array( 'footer-menu' => esc_html__( 'Footer Menu', 'blankslate' ) ) );
+add_action( 'after_setup_theme', 'blankslate_child_setup' );
 
-    add_filter( 'wp_nav_menu_items','add_admin_link', 10, 2 );
+/* Ajoute d'un nouvel emplacement de menu */
+
+register_nav_menus( array( 'footer-menu' => esc_html__( 'Footer Menu', 'blankslate' ) ) );
+
+
+
 
 function add_admin_link( $items, $args ) {
     if (is_user_logged_in() && $args->theme_location == 'main-menu') {
@@ -27,3 +33,5 @@ function add_admin_link( $items, $args ) {
 
     return $items;
 }
+
+add_filter( 'wp_nav_menu_items','add_admin_link', 10, 2 );
