@@ -2,9 +2,9 @@
 <?php get_sidebar(); ?>
 </div>
 
-<footer id="footer" role="contentinfo" class="PageFooter">
+<footer id="footer" class="PageFooter">
 <div id="copyright">
-<?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
+<?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?>
 </div>
 </footer>
 

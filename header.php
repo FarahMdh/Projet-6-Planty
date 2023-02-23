@@ -25,7 +25,7 @@
     
         <!--NAVIGATION BAR-->
 
-<nav id="menu-item" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement" class="PageHeader__nav">
+<nav id="menu-item" itemscope itemtype="https://schema.org/SiteNavigationElement" class="PageHeader__nav">
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>', 'container' => '' ) ); ?>
 <a class="PageHeader__nav-command" href="commander">Commander</a>
 </nav>
