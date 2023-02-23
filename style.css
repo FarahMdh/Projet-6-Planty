@@ -122,8 +122,13 @@ overflow-x:hidden;
         padding: 15px 15px 15px 0px;
     }
 
+    .PageHeader__nav ul.menu li a {
+        font-size: 12px;
+    }
+
     .PageHeader__nav-command {
         padding: 15px 30px 14px 30px!important;
+        font-size: 12px;
     }
 }
  
