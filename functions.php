@@ -22,12 +22,12 @@ add_action( 'after_setup_theme', 'blankslate_child_setup' );
 register_nav_menus( array( 'footer-menu' => esc_html__( 'Footer Menu', 'blankslate' ) ) );
 
 
-
+/* Ajout du lien Admin pour les utilisateurs connectés */
 
 function add_admin_link( $items, $args ) {
     if (is_user_logged_in() && $args->theme_location == 'main-menu') {
 
-        $items .= '<li><a href="'. get_admin_url() .'">Admin</a></li>';
+        $items .= '<li class="Lien_admin"><a href="'. get_admin_url() .'">Admin</a></li>';
 
     }
 
